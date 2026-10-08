@@ -1,0 +1,19 @@
+sudo systemctl start postgresql
+
+psql -U student -d uni -h localhost
+
+1
+
+\i schema.sql
+
+\i data.sql
+
+\i constraints_test.sql
+
+\dt
+
+\d table_name
+
+SELECT * FROM table_name;
+
+DROP TABLE IF EXISTS faculties, groups, students, teachers, discipline, register CASCADE;
